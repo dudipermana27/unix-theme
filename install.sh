@@ -13,6 +13,7 @@ installTheme(){
     cd /var/www/pterodactyl
     php artisan down
     echo "Memasang tema...tunggu ya"
+    wget https://github.com/ClaqNode-Hosting/unix-theme/blob/main/unix.zip
     unzip unix.zip
     cd /var/www/pterodactyl
     rm -r unix
