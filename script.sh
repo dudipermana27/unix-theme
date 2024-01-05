@@ -18,20 +18,14 @@ installTheme(){
     cd /var/www/pterodactyl
     chmod -R 755 storage/* bootstrap/cache
     composer install --no-dev --optimize-autoloader
+    php artisan migrate --force
     php artisan view:clear
     php artisan config:clear
-    php artisan migrate --seed --force
     chown -R www-data:www-data /var/www/pterodactyl/*
     cd /var/www/pterodactyl
-
-    # Install dependencies
-    apt update
     php artisan queue:restart
-
     php artisan up
 
-    cd /var/www/pterodactyl
-    php artisan optimize:clear
 }
 
 # Fungsi untuk menanyakan user apakah yakin ingin menginstall theme atau tidak
