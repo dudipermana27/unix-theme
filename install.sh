@@ -13,7 +13,7 @@ installTheme(){
     cd /var/www/pterodactyl
     php artisan down
     wget https://github.com/ClaqNode-Hosting/unix-theme/blob/main/unix.tar.gz
-    tar -xzvf unix.zip
+    tar -xzvf unix.tar.gz
     cd /var/www/pterodactyl
     rm -r unix
     chmod -R 755 storage/* bootstrap/cache
