@@ -12,10 +12,10 @@ clear
 installTheme(){
     cd /var/www/pterodactyl
     php artisan down
+    rm -r unix.tar.gz
     wget https://github.com/ClaqNode-Hosting/unix-theme/blob/main/unix.tar.gz
     tar -xzvf unix.tar.gz
     cd /var/www/pterodactyl
-    rm -r unix.tar.gz
     chmod -R 755 storage/* bootstrap/cache
     composer install --no-dev --optimize-autoloader
     php artisan view:clear
@@ -25,7 +25,6 @@ installTheme(){
     cd /var/www/pterodactyl
 
     # Install dependencies
-    chown -R nginx:nginx /var/www/pterodactyl/*
     apt update
     php artisan queue:restart
 
