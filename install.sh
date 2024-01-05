@@ -12,8 +12,8 @@ clear
 installTheme(){
     cd /var/www/pterodactyl
     php artisan down
-    unzip -cvf unix.zip pterodactyl
     echo "Memasang tema...tunggu ya"
+    unzip unix.zip
     cd /var/www/pterodactyl
     rm -r unix
     chmod -R 755 storage/* bootstrap/cache
