@@ -12,9 +12,8 @@ clear
 installTheme(){
     cd /var/www/pterodactyl
     php artisan down
-    echo "Memasang tema...tunggu ya"
-    wget https://github.com/ClaqNode-Hosting/unix-theme/blob/main/unix.zip
-    unzip unix.zip
+    wget https://github.com/ClaqNode-Hosting/unix-theme/blob/main/unix.tar.gz
+    tar -xzvf unix.zip
     cd /var/www/pterodactyl
     rm -r unix
     chmod -R 755 storage/* bootstrap/cache
