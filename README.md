@@ -1,5 +1,5 @@
-# Pterodactyl Dark Theme Installer
-[![Logo](https://telegra.ph/file/62938cc14bd7265539926.png)](https://github.com/yourusername/yourrepository)
+# Pterodactyl Unix Theme Installer
+(https://github.com/ClaqNode-Hosting/unix-theme)
 
 This script installs a dark theme for the Pterodactyl game server management panel.
 
@@ -9,7 +9,7 @@ This script installs a dark theme for the Pterodactyl game server management pan
 2. Run the following command to download the script:
 
 ```bash
-bash <(curl https://raw.githubusercontent.com/mufniDev/nightDy/main/install.sh)
+bash <(curl https://raw.githubusercontent.com/ClaqNode-Hosting/unix-theme/main/install.sh)
 ```
 
 3. Follow the on-screen prompts to install the theme.
@@ -20,4 +20,4 @@ If you run into issues or have questions, please open an issue in this repositor
 
 ## Credits
 
-This theme was created by mufniDev
+This theme was created by ClaqNode Hosting
