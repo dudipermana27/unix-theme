@@ -45,8 +45,8 @@ repair(){
 restoreBackUp(){
     echo "Memulihkan cadangan..."
     cd /var/www/
-    tar -xvf nightDy.tar.gz
-    rm nightDy.tar.gz
+    tar -xvf unix.tar.gz
+    rm unix.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
