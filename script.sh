@@ -12,17 +12,13 @@ clear
 installTheme(){
     cd /var/www/pterodactyl
     php artisan down
-    rm -r unix.tar.gz
-    wget https://filebin.net/ja5a1t863xeynn7a/unix.tar.gz
+    wget https://github.com/ClaqNode-Hosting/unix-theme/blob/main/unix.tar.gz
     tar -xzvf unix.tar.gz
-    cd /var/www/pterodactyl
-    chmod -R 755 storage/* bootstrap/cache
     composer install --no-dev --optimize-autoloader
     php artisan migrate --force
     php artisan view:clear
     php artisan config:clear
     chown -R www-data:www-data /var/www/pterodactyl/*
-    cd /var/www/pterodactyl
     php artisan queue:restart
     php artisan up
 
