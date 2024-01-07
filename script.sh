@@ -11,9 +11,13 @@ clear
 # Fungsi untuk membuat backup dari directory pterodactyl
 installTheme(){
     cd /var/www/pterodactyl
+    apt install unzip -y
+    apt autoremove -y
+    apt autoclean -y
+    clear
     php artisan down
-    wget https://github.com/ClaqNode-Hosting/unix-theme/blob/main/unix.tar.gz
-    tar -xzvf unix.tar.gz
+    wget https://filebin.net/rfn3f9tx3ai5e87d/unix.zip
+    unzip unix.zip
     composer install --no-dev --optimize-autoloader
     php artisan migrate --force
     php artisan view:clear
