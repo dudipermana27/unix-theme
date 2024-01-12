@@ -14,10 +14,6 @@ bash <(curl https://raw.githubusercontent.com/ClaqNode-Hosting/unix-theme/main/s
 
 3. Follow the on-screen prompts to install the theme.
 
-## Support
-
-If you run into issues or have questions, please open an issue in this repository.
-
 ## Credits
 
 This theme was created by ClaqNode Hosting
