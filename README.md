@@ -1,7 +1,7 @@
 # Pterodactyl Unix Theme Installer
 (https://github.com/ClaqNode-Hosting/unix-theme)
 
-This script installs a dark theme for the Pterodactyl game server management panel.
+This script installs a dark & white theme, custom background and more! for the Pterodactyl game server management panel.
 
 ## Installation
 
