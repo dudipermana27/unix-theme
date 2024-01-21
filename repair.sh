@@ -24,6 +24,10 @@ repairPanel(){
 
     chown -R www-data:www-data /var/www/pterodactyl/*
 
+    chown -R nginx:nginx /var/www/pterodactyl/*
+
+    chown -R apache:apache /var/www/pterodactyl/*
+
     php artisan queue:restart
 
     php artisan up
